@@ -11,7 +11,7 @@ const Minutes = () => {
   useEffect(() => {
     const fetchMinutes = async () => {
       try {
-        const response = await axios.get('https://41.57.106.76:8445/api/getMinutes');
+        const response = await axios.get('http://41.57.106.76:8445/api/getMinutes');
         setMinutes(response.data);
       } catch (err) {
         console.error('Error fetching minutes:', err);
@@ -43,7 +43,7 @@ const Minutes = () => {
         Header: 'PDF',
         accessor: 'file_url',
         Cell: ({ value }) => (
-          <a href={`https://41.57.106.76:8445/uploads/${value}`} target="_blank" rel="noopener noreferrer">
+          <a href={`http://41.57.106.76:8445/uploads/${value}`} target="_blank" rel="noopener noreferrer">
             View PDF
           </a>
         ),

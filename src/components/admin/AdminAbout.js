@@ -7,7 +7,7 @@ function AdminAbout() {
     const [about, setAbout] = useState({ history: '', mission: '', vision: '' });
 
     useEffect(() => {
-        axios.get('https://41.57.106.76:8445/api/about')
+        axios.get('http://41.57.106.76:8445/api/about')
             .then(response => setAbout(response.data))
             .catch(error => console.error('Error fetching about data:', error));
     }, []);
@@ -18,7 +18,7 @@ function AdminAbout() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.put('https://41.57.106.76:8445/api/about', about)
+        axios.put('http://41.57.106.76:8445/api/about', about)
             .then(response => alert(response.data.message))
             .catch(error => console.error('Error updating about data:', error));
     };

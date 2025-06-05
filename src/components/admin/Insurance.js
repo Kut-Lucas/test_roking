@@ -8,7 +8,7 @@ const Insurance = () => {
   const [insurances, setInsurances] = useState([]);
 
   useEffect(() => {
-    axios.get('https://41.57.106.76:8445/api/insurances')
+    axios.get('http://41.57.106.76:8445/api/insurances')
       .then(response => setInsurances(response.data))
       .catch(error => console.error('Error fetching insurance data:', error));
   }, []);
@@ -28,7 +28,7 @@ const Insurance = () => {
         Header: 'File',
         accessor: 'file_url',
         Cell: ({ value }) => (
-          <a href={`https://41.57.106.76:8445${value}`} target="_blank" rel="noopener noreferrer">
+          <a href={`http://41.57.106.76:8445${value}`} target="_blank" rel="noopener noreferrer">
             View PDF
           </a>
         )

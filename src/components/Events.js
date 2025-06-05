@@ -8,7 +8,7 @@ const EventImages = ({ images, onImageClick }) => (
     {images.map(image => (
       <div key={image.id} className="event-card" onClick={() => onImageClick(image)}>
         <img
-          src={`https://41.57.106.76:8445${image.image_url}`}
+          src={`http://41.57.106.76:8445${image.image_url}`}
           alt="Event"
           className="event-card-image"
         />
@@ -28,7 +28,7 @@ const ImageModal = ({ image, onClose }) => {
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <span className="close-btn" onClick={onClose}>&times;</span>
         <img
-          src={`https://41.57.106.76:8445${image.image_url}`}
+          src={`http://41.57.106.76:8445${image.image_url}`}
           alt="Full-size Event"
           className="modal-image"
         />
@@ -43,7 +43,7 @@ const Events = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   useEffect(() => {
-    axios.get('https://41.57.106.76:8445/events')
+    axios.get('http://41.57.106.76:8445/events')
       .then(response => {
         setEvents(response.data);
       })

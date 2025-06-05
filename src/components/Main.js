@@ -9,7 +9,7 @@ function Main() {
 
   // Fetch executive managers data from the database
   useEffect(() => {
-    axios.get('https://41.57.106.76:8445/api/management') // Update with your actual API endpoint
+    axios.get('http://41.57.106.76:8445/api/management') // Update with your actual API endpoint
       .then(response => {
         // Filter only Executive Committee data
         const execManagers = response.data.filter(manager => manager.committee_name === 'Executive Committee');
@@ -36,7 +36,7 @@ function Main() {
               {executiveManagers.length > 0 ? (
                 executiveManagers.map((manager, index) => (
                   <div key={index} className="manager-card">
-                    <img src={`https://41.57.106.76:8445${manager.photo_url}`} alt={manager.firstname} className="manager-image" />
+                    <img src={`http://41.57.106.76:8445${manager.photo_url}`} alt={manager.firstname} className="manager-image" />
                     <h3>{`${manager.firstname} ${manager.middlename} ${manager.lastname}`}</h3>
                     <p className="manager-role">{manager.user_role_name}</p>
                     <p className="manager-description">{manager.about}</p>
