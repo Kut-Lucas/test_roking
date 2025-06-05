@@ -1,0 +1,33 @@
+.minutes {
+    padding: 20px;
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  .minutes-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .minutes-table th,
+  .minutes-table td {
+    padding: 10px;
+    border: 1px solid #000;
+    text-align: left;
+  }
+  
+  .minutes-table th {
+    background-color: #f4f4f4;
+    color: #000;
+  }
+  
+  .minutes-table a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .minutes-table a:hover {
+    text-decoration: underline;
+  }
+  

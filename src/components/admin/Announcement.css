@@ -1,0 +1,40 @@
+/* Announcement.css */
+.announcement {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .announcement h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .announcement ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .announcement li {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .announcement h3 {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  .announcement p {
+    margin: 0;
+  }
+  
+  .timestamp {
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+    font-size: 0.9em;
+  }
+  

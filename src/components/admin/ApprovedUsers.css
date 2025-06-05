@@ -1,0 +1,72 @@
+/* Container for the Approved Users component */
+.approved-users-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Styling the table */
+  .approved-users-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Header cell styling */
+  .approved-users-table th {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  /* Body cell styling */
+  .approved-users-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  /* Alternating row colors */
+  .approved-users-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Hover effect for rows */
+  .approved-users-table tr:hover {
+    background-color: #e9ecef;
+  }
+  
+  /* Loader text styling */
+  .loading {
+    text-align: center;
+    font-size: 18px;
+    color: #007bff;
+  }
+  
+  /* Styling the header */
+  .h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .header-cell, .body-cell {
+      padding: 8px;
+      font-size: 0.9em;
+    }
+  
+    .heading {
+      font-size: 1.2em;
+    }
+  }
+  

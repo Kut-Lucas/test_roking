@@ -1,0 +1,80 @@
+/* Ensure the whole document takes at least 100% of the viewport height */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Content should take all available space except the footer height */
+  .content {
+    flex: 1;
+  }
+  
+  .Footer {
+    background-color: #36C2CE;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .footer-left, .footer-center, .footer-right {
+    flex: 1;
+    padding: 0 10px;
+  }
+  
+  .footer-left h4, .footer-center h4, .footer-right h4 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-center ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-center ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-center ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-center ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    background-color: #2b72fb;
+    padding: 10px 0;
+    margin-top: 20px;
+  }
+  
+  /* Media Query for Small Devices */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-left, .footer-center, .footer-right {
+      padding: 10px 0;
+      text-align: center;
+    }
+  }
+  

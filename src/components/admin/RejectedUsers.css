@@ -1,0 +1,50 @@
+/* RejectedUsers.css */
+
+.rejected-users-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .rejected-users-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .rejected-users-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .rejected-users-table th,
+  .rejected-users-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .rejected-users-table th {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .rejected-users-table td {
+    background-color: #fff;
+  }
+  
+  .rejected-users-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .rejected-users-table th span {
+    margin-left: 5px;
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 18px;
+    color: #007bff;
+  }
+  

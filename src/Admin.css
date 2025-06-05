@@ -1,0 +1,51 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cont-admin {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.admin-topnav {
+    width: 100%;
+    height: 10vh;
+    background-color: blue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures it stays on top of other content */
+}
+
+.flex-admin {
+    display: flex;
+    flex: 1;
+    margin-top: 10vh; /* Offset by the height of the topnav */
+    margin-bottom: 6vh; /* Offset by the height of the footer */
+    overflow-y: auto; /* Enables scrolling within this container */
+}
+
+.flex-one {
+    width: 20%;
+    height: 100%; /* Fills the remaining height */
+}
+
+.flex-two {
+    width: 80%;
+    height: 100%; /* Fills the remaining height */
+}
+
+.admin-footer {
+    width: 100%;
+    height: 6vh;
+    text-align: center;
+    background-color: #3b3a8f; /* Grey color */
+    color: #fff; /* Text color */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000; /* Ensures it stays on top of other content */
+}

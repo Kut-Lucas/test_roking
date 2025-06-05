@@ -1,0 +1,82 @@
+.admin__sidebar {
+    width: 250px;
+    height: 84vh;
+    background-color: #ecf0f1; /* Light grey background */
+    color: #2c3e50; /* Dark blue text */
+    position: fixed;
+    /* top: 0; */
+    left: 0;
+    display: flex;
+    /* flex-direction: column; */
+  }
+  
+  .admin__sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 240px;
+  }
+  
+  .admin__menu-item,
+  .admin__submenu-item {
+    background: none;
+    border: none;
+    color: #2c3e50;
+    padding: 15px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .admin__menu-item:hover,
+  .admin__submenu-item:hover {
+    background-color: #3498db; /* Light blue on hover */
+    color: white; /* White text on hover */
+  }
+  
+  .admin__submenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #d5dae0; /* Slightly darker background for submenus */
+  }
+  
+  .admin__submenu li {
+    padding: 0;
+  }
+  
+  .admin__submenu-item {
+    padding-left: 30px;
+  }
+  
+  .admin__icon {
+    width: 20px; /* Ensuring consistent spacing for icons */
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .admin__icon_drops{
+    width: 16px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .admin__toggle-icon {
+    margin-left: auto; /* Push the toggle icon to the right */
+  }
+  
+  @media (max-width: 768px) {
+    .admin__sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+  }
+  

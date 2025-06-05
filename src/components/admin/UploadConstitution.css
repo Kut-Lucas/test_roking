@@ -1,0 +1,38 @@
+/* UploadConstitution.css */
+.upload-constitution {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .upload-constitution form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .upload-constitution label {
+    margin: 10px 0 5px;
+  }
+  
+  .upload-constitution input {
+    margin-bottom: 15px;
+    padding: 8px;
+  }
+  
+  .upload-constitution button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .upload-constitution button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+  }
+  

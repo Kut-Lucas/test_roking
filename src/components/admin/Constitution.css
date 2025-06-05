@@ -1,0 +1,36 @@
+
+   /* Constitution.css */
+.constitution {
+  padding: 20px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.constitution h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.constitution-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Add space between each constitution */
+}
+
+.constitution-item {
+  margin-bottom: 40px; /* Ensure spacing between items */
+}
+
+.constitution-iframe {
+  width: 100%;
+  height: 80vh; /* Occupies 80% of the viewport height */
+  border: 1px solid #ddd;
+}
+
+.constitution p {
+  text-align: right;
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 14px;
+  color: #666;
+}

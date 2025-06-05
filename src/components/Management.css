@@ -1,0 +1,60 @@
+.management-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .management-title {
+    color: #007BFF; /* Blue color for the title */
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .executive-managers, .other-managers {
+    margin-bottom: 20px;
+  }
+  
+  .exec__h2 {
+    color: #0056b3; /* Darker blue for section headings */
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .manager-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .manager-card {
+    border: 1px solid #007BFF;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .manager-image {
+    width: 100%;
+    /* height: 50%; */
+    border-radius: 10%;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    margin: 10px 0 5px;
+    color: #333;
+  }
+  
+  .manager-role {
+    font-weight: bold;
+    color: #007BFF;
+    margin-bottom: 5px;
+  }
+  
+  .manager-description {
+    color: #555;
+    font-size: 0.9em;
+  }
+  

@@ -1,0 +1,74 @@
+
+   /* General Styles */
+.admin-management-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  margin-top: 1rem;
+}
+
+.admin-management-header {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.admin-management-select,
+.admin-management-input,
+.admin-management-button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.admin-management-select {
+  background-color: #f9f9f9;
+}
+
+.admin-management-input {
+  background-color: #f9f9f9;
+}
+
+.admin-management-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.admin-management-button:hover {
+  background-color: #0056b3;
+}
+
+/* Table Styles */
+.admin-management-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.admin-management-th,
+.admin-management-td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.admin-management-th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.admin-management-tr:hover {
+  background-color: #f1f1f1;
+}

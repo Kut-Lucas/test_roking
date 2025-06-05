@@ -1,0 +1,71 @@
+/* Styles for the Events component */
+.events-container {
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .events-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .events-category {
+    margin-bottom: 40px;
+  }
+  
+  .events-category-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .event-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust spacing between cards */
+  }
+  
+  .event-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(33.333% - 20px); /* Three cards per row with gap */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .event-card-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .event-card-content {
+    padding: 10px;
+    flex-grow: 1; /* Allow content to grow and take up available space */
+  }
+  
+  .event-card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .event-card-brief {
+    font-size: 0.875rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .event-card {
+      width: calc(50% - 20px); /* Two cards per row on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .event-card {
+      width: 100%; /* One card per row on very small screens */
+    }
+  }
+  
