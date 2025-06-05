@@ -13,7 +13,7 @@ const AdminWelcomePage = () => {
 
   useEffect(() => {
     // Fetch user data from the backend using axios
-    axios.get('https://roking-server.onrender.com/api/users/status', {
+    axios.get('http://41.57.106.76:8445/api/users/status', {
       withCredentials: true,  // Include credentials in the request
     })
       .then(response => {

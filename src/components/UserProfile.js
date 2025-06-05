@@ -18,12 +18,12 @@ const UserProfile = () => {
 
     useEffect(() => {
         // Fetch user profile after login
-        axios.get('https://roking-server.onrender.com/api/profile')
+        axios.get('http://41.57.106.76:8445/api/profile')
             .then(response => {
                 // Prepend server URL to the photo URL if it exists
                 const profileData = response.data;
                 if (profileData.photo_url) {
-                    profileData.photo_url = `https://roking-server.onrender.com${profileData.photo_url}`;
+                    profileData.photo_url = `http://41.57.106.76:8445${profileData.photo_url}`;
                 }
                 setProfile(profileData);
             })
@@ -68,7 +68,7 @@ const UserProfile = () => {
             formData.append('photo', selectedFile);
         }
 
-        axios.put('https://roking-server.onrender.com/api/profile', formData)
+        axios.put('http://41.57.106.76:8445/api/profile', formData)
             .then(response => {
                 alert("Profile updated successfully!");
             })

@@ -9,7 +9,7 @@ const EventImages = ({ images, openModal }) => (
     {images.map(image => (
       <div key={image.id} className="event-card" onClick={() => openModal(image)}>
         <img
-          src={`https://roking-server.onrender.com${image.image_url}`}
+          src={`http://41.57.106.76:8445${image.image_url}`}
           alt="Event"
           className="event-card-image"
         />
@@ -27,7 +27,7 @@ const Events = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   useEffect(() => {
-    axios.get('https://roking-server.onrender.com/events')
+    axios.get('http://41.57.106.76:8445/events')
       .then(response => {
         setEvents(response.data);
       })
@@ -80,7 +80,7 @@ const Events = () => {
           overlayClassName="overlay"
         >
           <div className="modal-content">
-            <img src={`https://roking-server.onrender.com${selectedImage.image_url}`} alt="Event" className="modal-image" />
+            <img src={`http://41.57.106.76:8445${selectedImage.image_url}`} alt="Event" className="modal-image" />
             <div className="modal-description">{selectedImage.brief}</div>
             <button onClick={closeModal} className="modal-close-button">Close</button>
           </div>

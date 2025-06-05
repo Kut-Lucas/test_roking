@@ -15,9 +15,9 @@ function AdminManagement() {
     useEffect(() => {
         async function fetchData() {
             try {
-                const usersRes = await axios.get('https://roking-server.onrender.com/api/admin-management');
-                const committeesRes = await axios.get('https://roking-server.onrender.com/api/committees');
-                const rolesRes = await axios.get('https://roking-server.onrender.com/api/user-roles');
+                const usersRes = await axios.get('http://41.57.106.76:8445/api/admin-management');
+                const committeesRes = await axios.get('http://41.57.106.76:8445/api/committees');
+                const rolesRes = await axios.get('http://41.57.106.76:8445/api/user-roles');
                 setUsers(usersRes.data);
                 setCommittees(committeesRes.data);
                 setRoles(rolesRes.data);
@@ -51,14 +51,14 @@ function AdminManagement() {
         }
 
         try {
-            await axios.post('https://roking-server.onrender.com/api/update-role', {
+            await axios.post('http://41.57.106.76:8445/api/update-role', {
                 user_id: selectedUserId,
                 committee_id: selectedCommittee,
                 role_id: selectedRole
             });
             alert('Role added successfully.');
             // Refresh data after adding the role
-            const usersRes = await axios.get('https://roking-server.onrender.com/api/admin-management');
+            const usersRes = await axios.get('http://41.57.106.76:8445/api/admin-management');
             setUsers(usersRes.data);
         } catch (error) {
             console.error('Error adding role:', error);

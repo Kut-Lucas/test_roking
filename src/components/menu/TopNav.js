@@ -16,7 +16,7 @@ const TopNav = () => {
     if (auth.isAuthenticated) {
       const fetchUserName = async () => {
         try {
-          const response = await axios.get('https://roking-server.onrender.com/api/getUserName');
+          const response = await axios.get('http://41.57.106.76:8445/api/getUserName');
           console.log('User Name Response:', response.data); // Debug logging
           if (response.data.user) {
             setUserName(response.data.user.firstName);
@@ -31,7 +31,7 @@ const TopNav = () => {
 
   const handleLogout = async () => {
     try {
-      await axios.post('https://roking-server.onrender.com/api/logout'); // Send logout request
+      await axios.post('http://41.57.106.76:8445/api/logout'); // Send logout request
       logout(); // Call logout function from context
       navigate('/login'); // Redirect to login page
     } catch (error) {

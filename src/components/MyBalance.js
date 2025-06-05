@@ -12,7 +12,7 @@ const MyBalance = () => {
   useEffect(() => {
     const fetchPayments = async () => {
       try {
-        const response = await axios.get('https://roking-server.onrender.com/api/payments/my-balance', {
+        const response = await axios.get('http://41.57.106.76:8445/api/payments/my-balance', {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
         });
         setPayments(response.data);

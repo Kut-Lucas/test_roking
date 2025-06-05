@@ -11,7 +11,7 @@ const About = () => {
   });
 
   useEffect(() => {
-    axios.get('https://roking-server.onrender.com/about')
+    axios.get('http://41.57.106.76:8445/about')
       .then(response => {
         setAboutData(response.data);
       })

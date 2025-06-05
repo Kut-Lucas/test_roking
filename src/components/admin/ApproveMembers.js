@@ -9,7 +9,7 @@ const ApproveMembers = () => {
 
   useEffect(() => {
     // Fetch pending members from the API
-    axios.get('https://roking-server.onrender.com/api/pending-members', { withCredentials: true })
+    axios.get('http://41.57.106.76:8445/api/pending-members', { withCredentials: true })
       .then(response => {
         console.log('Pending Members:', response.data); // Debugging
         setPendingMembers(response.data);
@@ -20,7 +20,7 @@ const ApproveMembers = () => {
   }, []);
 
   const handleApprove = useCallback((id) => {
-    axios.post(`https://roking-server.onrender.com/api/approve-member/${id}`, {}, { withCredentials: true })
+    axios.post(`http://41.57.106.76:8445/api/approve-member/${id}`, {}, { withCredentials: true })
       .then(() => {
         setPendingMembers(pendingMembers.filter(member => member.user_id !== id));
       })
@@ -28,7 +28,7 @@ const ApproveMembers = () => {
   }, [pendingMembers]);
 
   const handleReject = useCallback((id) => {
-    axios.post(`https://roking-server.onrender.com/api/reject-member/${id}`, {}, { withCredentials: true })
+    axios.post(`http://41.57.106.76:8445/api/reject-member/${id}`, {}, { withCredentials: true })
       .then(() => {
         setPendingMembers(pendingMembers.filter(member => member.user_id !== id));
       })

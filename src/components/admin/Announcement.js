@@ -9,7 +9,7 @@ const Announcement = () => {
   useEffect(() => {
     const fetchAnnouncements = async () => {
       try {
-        const response = await axios.get('https://roking-server.onrender.com/api/getAnnouncements');
+        const response = await axios.get('http://41.57.106.76:8445/api/getAnnouncements');
         setAnnouncements(response.data);
       } catch (err) {
         console.error('Error fetching announcements:', err);

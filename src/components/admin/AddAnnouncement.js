@@ -12,7 +12,7 @@ const AddAnnouncement = () => {
     e.preventDefault();
 
     try {
-      await axios.post('https://roking-server.onrender.com/api/addAnnouncement', {
+      await axios.post('http://41.57.106.76:8445/api/addAnnouncement', {
         reference,
         announcement,
       });

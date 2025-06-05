@@ -9,7 +9,7 @@ const Logout = () => {
 
     const handleLogout = async () => {
         try {
-            await axios.post('https://roking-server.onrender.com/logout');
+            await axios.post('http://41.57.106.76:8445/logout');
             setUser(null); // Clear the user state
             navigate('/login');
         } catch (err) {

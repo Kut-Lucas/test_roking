@@ -12,7 +12,7 @@ const AdminEvents = () => {
   const handleEventSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://roking-server.onrender.com/events', {
+      const response = await axios.post('http://41.57.106.76:8445/events', {
         category,
         brief: eventBrief
       });
@@ -23,7 +23,7 @@ const AdminEvents = () => {
         formData.append('image', imageFile);
         formData.append('brief', imageBrief);
 
-        await axios.post(`https://roking-server.onrender.com/events/${eventId}/images`, formData, {
+        await axios.post(`http://41.57.106.76:8445/events/${eventId}/images`, formData, {
           headers: { 'Content-Type': 'multipart/form-data' }
         });
       }

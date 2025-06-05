@@ -7,7 +7,7 @@ import axios from 'axios';
 
 // Axios configuration
 axios.defaults.withCredentials = true;
-axios.defaults.baseURL = 'https://roking-server.onrender.com'; // Adjust if necessary
+axios.defaults.baseURL = 'http://41.57.106.76:8445'; // Adjust if necessary
 
 // Create root element
 const root = ReactDOM.createRoot(document.getElementById('root'));

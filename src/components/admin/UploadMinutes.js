@@ -18,7 +18,7 @@ const UploadMinutes = () => {
     formData.append('file', file); // Append the selected file
 
     try {
-      await axios.post('https://roking-server.onrender.com/api/uploadMinutes', formData, {
+      await axios.post('http://41.57.106.76:8445/api/uploadMinutes', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
