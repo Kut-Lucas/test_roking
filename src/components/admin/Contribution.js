@@ -12,7 +12,7 @@ function Contribution() {
   useEffect(() => {
     const fetchContributions = async () => {
       try {
-        const response = await axios.get('http://41.57.106.76:8445/api/contributions');
+        const response = await axios.get('https://41.57.106.76:8445/api/contributions');
         setContributions(response.data);
       } catch (err) {
         console.error('Error fetching contributions:', err);
@@ -50,7 +50,7 @@ function Contribution() {
         Header: 'File',
         accessor: 'file_url',
         Cell: ({ value }) => (
-          <a href={`http://41.57.106.76:8445${value}`} target="_blank" rel="noopener noreferrer">
+          <a href={`https://41.57.106.76:8445${value}`} target="_blank" rel="noopener noreferrer">
             Download File
           </a>
         ),

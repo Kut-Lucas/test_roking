@@ -220,7 +220,7 @@ const ContributionManager = () => {
         return;
       }
 
-      const response = await axios.post('http://41.57.106.76:8445/api/payments', { payments: validPayments }, {
+      const response = await axios.post('https://41.57.106.76:8445/api/payments', { payments: validPayments }, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
       });
 
@@ -247,7 +247,7 @@ const ContributionManager = () => {
       const formData = new FormData();
       formData.append('file', file);
 
-      const response = await axios.post('http://41.57.106.76:8445/api/payments/upload', formData, {
+      const response = await axios.post('https://41.57.106.76:8445/api/payments/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
           Authorization: `Bearer ${localStorage.getItem('token')}`

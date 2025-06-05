@@ -50,7 +50,7 @@ const Register = () => {
 
         try {
             // Make the POST request
-            const response = await axios.post('http://41.57.106.76:8445/register', formData, {
+            const response = await axios.post('https://41.57.106.76:8445/register', formData, {
                 withCredentials: true,
             });
 

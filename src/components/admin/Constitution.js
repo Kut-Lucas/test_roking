@@ -10,7 +10,7 @@ const Constitution = () => {
   useEffect(() => {
     const fetchConstitutions = async () => {
       try {
-        const response = await axios.get('http://41.57.106.76:8445/api/getConstitutions');
+        const response = await axios.get('https://41.57.106.76:8445/api/getConstitutions');
         setConstitutions(response.data);
       } catch (err) {
         console.error('Error fetching constitutions:', err);
@@ -28,7 +28,7 @@ const Constitution = () => {
           <div key={item.id} className="constitution-item">
             <h3>{item.title}</h3>
             <iframe
-              src={`http://41.57.106.76:8445/uploads/${item.file_url}`}
+              src={`https://41.57.106.76:8445/uploads/${item.file_url}`}
               title={item.title}
               className="constitution-iframe"
             ></iframe>

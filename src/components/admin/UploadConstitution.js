@@ -27,7 +27,7 @@ const UploadConstitution = () => {
     formData.append('title', title);
 
     try {
-      await axios.post('http://41.57.106.76:8445/api/uploadConstitution', formData, {
+      await axios.post('https://41.57.106.76:8445/api/uploadConstitution', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

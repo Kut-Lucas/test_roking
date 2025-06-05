@@ -19,7 +19,7 @@ const ApprovedUsers = () => {
   useEffect(() => {
     const loadData = async () => {
       try {
-        const response = await axios.get('http://41.57.106.76:8445/api/users/approved', {
+        const response = await axios.get('https://41.57.106.76:8445/api/users/approved', {
           withCredentials: true // Ensure cookies are sent with the request
         });
 

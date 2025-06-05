@@ -14,7 +14,7 @@ const AdminInsurance = () => {
     formData.append('insuranceFile', file);
 
     try {
-      await axios.post('http://41.57.106.76:8445/api/upload-insurance', formData, {
+      await axios.post('https://41.57.106.76:8445/api/upload-insurance', formData, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
       alert('Insurance uploaded successfully');

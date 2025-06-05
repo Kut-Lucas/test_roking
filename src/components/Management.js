@@ -7,7 +7,7 @@ const Management = () => {
   const [managers, setManagers] = useState([]);
 
   useEffect(() => {
-    axios.get('http://41.57.106.76:8445/api/management')
+    axios.get('https://41.57.106.76:8445/api/management')
       .then(response => {
         setManagers(response.data);
       })
@@ -35,7 +35,7 @@ const Management = () => {
         <div className="manager-list" id="exec">
           {managers.filter(manager => manager.committee_name === 'Executive Committee').map((manager, index) => (
             <div key={index} className="manager-card">
-              <img src={`http://41.57.106.76:8445${manager.photo_url}`} alt={manager.firstname} className="manager-image" />
+              <img src={`https://41.57.106.76:8445${manager.photo_url}`} alt={manager.firstname} className="manager-image" />
               <h3>{`${manager.firstname} ${manager.middlename} ${manager.lastname}`}</h3>
               <p className="manager-role">{manager.user_role_name}</p>
               <p className="manager-description">{manager.about}</p>
@@ -50,7 +50,7 @@ const Management = () => {
         <div className="manager-list">
           {managers.filter(manager => manager.committee_name === 'Welfare Committee').map((manager, index) => (
             <div key={index} className="manager-card">
-              <img src={`http://41.57.106.76:8445${manager.photo_url}`} alt={manager.firstname} className="manager-image" />
+              <img src={`https://41.57.106.76:8445${manager.photo_url}`} alt={manager.firstname} className="manager-image" />
               <h3>{`${manager.firstname} ${manager.middlename} ${manager.lastname}`}</h3>
               <p className="manager-role">{manager.user_role_name}</p>
               <p className="manager-description">{manager.about}</p>

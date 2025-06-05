@@ -12,7 +12,7 @@ const AddAnnouncement = () => {
     e.preventDefault();
 
     try {
-      await axios.post('http://41.57.106.76:8445/api/addAnnouncement', {
+      await axios.post('https://41.57.106.76:8445/api/addAnnouncement', {
         reference,
         announcement,
       });

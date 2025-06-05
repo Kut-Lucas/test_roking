@@ -11,7 +11,7 @@ const UsersList = () => {
 
     useEffect(() => {
         // Fetch users from the server
-        axios.get('http://41.57.106.76:8445/api/users-data')
+        axios.get('https://41.57.106.76:8445/api/users-data')
             .then(response => setUsers(response.data))
             .catch(error => console.error('Error fetching users:', error));
     }, []);
@@ -111,7 +111,7 @@ const UsersList = () => {
                             <div>
                                 <p><strong className='center'>Profile Photo</strong></p>
                                 <img
-                                    src={`http://41.57.106.76:8445${selectedUser.photo_url}`}
+                                    src={`https://41.57.106.76:8445${selectedUser.photo_url}`}
                                     alt="User Profile"
                                     style={{ width: '150px', height: '150px', borderRadius: '50%' }}
                                 />
